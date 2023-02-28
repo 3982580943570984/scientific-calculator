@@ -40,7 +40,7 @@ def make_negative(sender, data, user_data):
 
 def make_inverse(sender, data, user_data):
     widget = user_data
-    number = int(dpg.get_value(widget))
+    number = float(dpg.get_value(widget))
     if number > 1:
         dpg.set_value(widget, float(1.0 / number))
     elif number > 0:
